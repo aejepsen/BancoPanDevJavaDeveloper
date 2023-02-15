@@ -9,6 +9,12 @@ public class TiposVariaveis {
         short numeroCurto = 1;
         int numeroNormal = numeroCurto;
         short numeroCurto2 = (short) numeroNormal;
+        final String BR = "Brasil";
+        final String ESTADOS_BRASILEIROS = "27";
+        final String CAPITAL_BRASILEIRA = "Brasília";
+        System.out.println(ESTADOS_BRASILEIROS);
+        System.out.println(CAPITAL_BRASILEIRA);
+        System.out.println(BR);
         System.out.println(numeroCurto2);
         System.out.println(numeroNormal);
         System.out.println(numeroCurto);
