@@ -1,4 +1,4 @@
-package operadoresLogicos;
+package operadores;
 
 public class Ternarios {
 
