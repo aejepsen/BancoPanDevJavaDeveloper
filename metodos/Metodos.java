@@ -21,7 +21,7 @@ public class Metodos {
     return divisor;}
   
   // este método não pode ser visto por outras classes no projeto
-  private void metodoPrivado(){}
+  // private void metodoPrivado(){}
   
   //alguns equívocos estruturais
   public void validar(){
@@ -37,7 +37,7 @@ public class Metodos {
     //um objeto cliente e passar como parâmetro ?
     //veja abaixo
   }
-  public void gravarCliente(Cliente cliente){}
+  // public void gravarCliente(Cliente cliente){}
   //ou
-  public void gravar(Cliente cliente){}
+  // public void gravar(Cliente cliente){}
 }
