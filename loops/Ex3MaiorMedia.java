@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex3_MaiorMedia {
+public class Ex3MaiorMedia {
   
   public static void main(String[] args) {
     try (Scanner input = new Scanner(System.in)) {
