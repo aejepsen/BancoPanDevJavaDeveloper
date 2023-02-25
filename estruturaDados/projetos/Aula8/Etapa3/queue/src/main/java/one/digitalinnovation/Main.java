@@ -1,4 +1,4 @@
-package one.digitalinnovation;
+package estruturaDados.projetos.Aula8.Etapa3.queue.src.main.java.one.digitalinnovation;
 
 import java.util.LinkedList;
 import java.util.Queue;

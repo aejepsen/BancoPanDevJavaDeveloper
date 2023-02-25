@@ -1,4 +1,4 @@
-package one.digitalinnovation;
+package estruturaDados.projetos.Aula8.Etapa1.equalshashCode.src.main.java.one.digitalinnovation;
 
 import java.util.ArrayList;
 import java.util.List;
