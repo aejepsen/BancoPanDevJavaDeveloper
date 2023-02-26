@@ -5,7 +5,7 @@ public class Main {
   public static void main(String[] args) {
 
     Pilha minhaPilha = new Pilha();
-    
+
     minhaPilha.push(new No(1));
     minhaPilha.push(new No(2));
     minhaPilha.push(new No(3));
@@ -13,6 +13,15 @@ public class Main {
     minhaPilha.push(new No(5));
 
     System.out.println(minhaPilha);
+
+    System.out.println(minhaPilha.pop());
+
+    System.out.println(minhaPilha);
+
+    System.out.println(minhaPilha.top());
+    System.out.println(minhaPilha);
+
+    
   }
   
 }
