@@ -1,18 +1,23 @@
 package one.digitalinnovation;
 
-public class Fila {
+public class Fila<T> {
 
-    private No refNoEntradaFila = null;
+    private No<T> refNoEntradaFila;
 
-    public void enqueue(No novoNo){
+    public Fila() {
+        this.refNoEntradaFila = null;
+    }
+    
+    public void enqueue(T object){
+        No<T> novoNo = new No<>(object);
         novoNo.setRefNo(refNoEntradaFila);
         refNoEntradaFila = novoNo;
     }
 
-    public No dequeue(){
+    public T dequeue(){
         if(!isEmpty()){
-            No primeiroNo = refNoEntradaFila;
-            No noAuxiliar = refNoEntradaFila;
+            No<T> primeiroNo = refNoEntradaFila;
+            No<T> noAuxiliar = refNoEntradaFila;
             while(true){
                 if(primeiroNo.getRefNo() != null) {
                     noAuxiliar = primeiroNo;
@@ -22,14 +27,14 @@ public class Fila {
                     break;
                 }
             }
-            return primeiroNo;
+            return  (T) primeiroNo.getObject();
         }
         return null;
     }
 
-    public No first(){
+    public T first(){
         if(!isEmpty()){
-            No primeiroNo = refNoEntradaFila;
+            No<T> primeiroNo = refNoEntradaFila;
             while(true){
                 if(primeiroNo.getRefNo() != null) {
                     primeiroNo = primeiroNo.getRefNo();
@@ -37,7 +42,7 @@ public class Fila {
                     break;
                 }
             }
-            return primeiroNo;
+            return (T) primeiroNo.getObject();
         }
         return null;
     }
@@ -50,7 +55,7 @@ public class Fila {
     @Override
     public String toString() {
         String stringRetorno = "";
-        No noAuxiliar = refNoEntradaFila;
+        No<T> noAuxiliar = refNoEntradaFila;
 
         if(refNoEntradaFila != null){
             while(true){
