@@ -17,6 +17,11 @@ public class Main {
         System.out.println(new Carro("Ford").hashCode());
         System.out.println(new Carro("Ford").hashCode());
 
+        Carro carro1 = new Carro("Ford");
+        Carro carro2 = new Carro("BMW");
+
+        System.out.println(carro1.equals(carro2));
+
     }
 
 }
