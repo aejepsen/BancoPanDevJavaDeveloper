@@ -1,3 +1,5 @@
+package aula1;
+
 /**
  * Classe principal dos exercícios da Aula 1 de Métodos.
  */

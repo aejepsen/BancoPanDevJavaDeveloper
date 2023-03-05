@@ -1,3 +1,4 @@
+package aula1;
 public class Calculadora {
 
   public static void soma(double numero1, double numero2) {
